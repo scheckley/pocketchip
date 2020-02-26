@@ -47,7 +47,7 @@ clear
 ```
 ## Adding a ssh key
 ### generate a new ssh key
-`ssh-keygen -t rsa -b 4096 -C "alex.pare.inc@gmail.com"`
+`ssh-keygen -t rsa -b 4096 -C "email.address"`
 ### show the public ssh key (you need to add it to github)
 `cat ~/.ssh/id_rsa.pub`
 
