@@ -33,6 +33,9 @@ select `en_US.UTF-8 UTF-8` then `en_US.UTF-8`
 ###  Setup keymap
 Add `/usr/bin/loadkeys /home/chip/pocketchip/keymap.kmap` in `/etc/rc.local`
 
+### Note:
+The default key mapping (courtesy of /home/chip/.Xmodmap) maps the hyphen key as the numeric keypad hyphen. Apparently some software doesn't like that; when searching a man page via /, typing - would give screwy results (not fun if you're trying to search for a specific command-line switch). If you want to correct this, edit .Xmodmap and change these two lines (I'd recommend changing the + key as well), then run "xmodmap .Xmodmap" from the terminal: keycode 82 = minus underscore F11 minus ke…
+
 ### Add to `~/.zshrc`
 ```
 export LC_ALL=en_US.UTF-8
